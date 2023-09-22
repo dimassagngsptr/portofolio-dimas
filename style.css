@@ -1,0 +1,400 @@
+:root {
+   ---maincolor: #7e7d7d;
+}
+* {
+   margin: 0;
+   padding: 0;
+}
+
+.index {
+   font-family: "poppins", serif;
+   background-image: linear-gradient(
+         to bottom,
+         rgba(0, 0, 0, 0.3),
+         rgba(0, 0, 0, 0.9)
+      ),
+      url(/images/sport-car-with-black-white-autotuning-driving-forest.jpg);
+   height: 650px;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+.main {
+   background-color: rgba(0, 0, 0, 0.3);
+   height: 650px;
+}
+/* navbar */
+.navbar {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   font-size: 18px;
+   width: 100%;
+   height: 70px;
+   background-color: rgba(0, 0, 0, 0.5);
+   line-height: 70px;
+}
+.navbar-logo {
+   margin: 10px 0 0 50px;
+}
+
+.navbar-logo a {
+   color: white;
+   text-decoration: none;
+}
+
+.navbar-nav a {
+   color: rgba(255, 255, 255, 0.4);
+   margin: 10px;
+   text-decoration: none;
+   padding: 0 0 5px 0;
+   cursor: pointer;
+}
+
+.navbar-nav a:hover {
+   border-bottom: 1px solid var(---maincolor);
+   color: white;
+}
+
+.navbar-search {
+   margin-right: 20px;
+}
+
+.navbar-search button {
+   padding: 5px 15px;
+   outline: none;
+   background-color: transparent;
+   color: white;
+   border: none;
+   cursor: pointer;
+}
+
+.navbar-btn {
+   border: 1px solid var(---maincolor);
+   padding: 5px 10px;
+   margin: 0 30px 0 0;
+}
+
+.navbar-btn {
+   color: white;
+   border: 1px solid rgba(255, 255, 255, 0.61);
+   border-radius: 10px;
+   outline: none;
+   background-color: transparent;
+   margin: 0;
+}
+
+.navbar-btn::placeholder {
+   color: rgba(255, 255, 255, 0.788);
+}
+
+/* container */
+.container {
+   display: flex;
+   justify-content: space-between;
+   padding: 150px 0;
+   width: 100%;
+   font-family: "poppins", serif;
+   color: white;
+   position: relative;
+}
+
+.container .container-left {
+   padding: 40px 20px 0 50px;
+   color: white;
+}
+.container .container-button {
+   display: flex;
+}
+.container-left .btn-info {
+   /* display: inline-block; */
+   border: 1px solid var(---maincolor);
+   padding: 10px 25px;
+   margin: 20px 0;
+   color: white;
+   text-decoration: none;
+   margin: 20px 10px;
+}
+.btn-info:hover {
+   background-color: var(---maincolor);
+}
+.container-left .btn-contact {
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   border: 1px solid var(---maincolor);
+   padding: 5px 5px;
+   color: white;
+   text-decoration: none;
+   margin: 20px 10px;
+   width: 105px;
+   line-height: 5px;
+}
+.btn-contact:hover {
+   background-color: var(---maincolor);
+   color: white;
+}
+
+.option {
+   display: none;
+   position: absolute;
+   width: 115px;
+   text-align: start;
+   left: 210px;
+   top: 315px;
+   border: 1px solid var(---maincolor);
+   border-top: none;
+   margin: 0 1px;
+}
+
+/* best seller */
+
+.best-seller {
+   height: 800px;
+   background-image: linear-gradient(
+         to bottom,
+         rgba(0, 0, 0, 0.8),
+         rgba(0, 0, 0, 0.7)
+      ),
+      url(/images/2010.i123.005..car\ headlights\ AD\ composition.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+.best-car {
+   font-family: "poppins", serif;
+   color: white;
+}
+
+.best-car h1 {
+   text-align: center;
+   padding: 50px 0 0 0;
+}
+.list-car {
+   display: grid;
+   grid-template-columns: repeat(10, 1fr);
+   overflow: hidden;
+}
+
+.list-car-item {
+   height: 100px;
+   border-radius: 10px;
+   width: 300px;
+   height: 500px;
+   padding: 30px 15px;
+   animation: slideToLeft 8s linear infinite;
+}
+
+@keyframes slideToLeft {
+   0% {
+      transform: translateX(0);
+   }
+   100% {
+      transform: translateX(-100%);
+   }
+}
+.list-car-item img {
+   margin: 20px 5px;
+   border: 1px solid rgba(255, 255, 255, 0.363);
+   border-radius: 10px;
+   width: 290px;
+   height: 25%;
+   object-fit: cover;
+}
+
+.btn {
+   display: inline-block;
+   text-decoration: none;
+   color: white;
+   border: 1px solid var(---maincolor);
+   padding: 10px 15px;
+   margin: 20px auto;
+   border-radius: 10px;
+}
+
+.btn:hover {
+   background-color: var(---maincolor);
+}
+
+/* location */
+
+.location {
+   font-family: "poppins", serif;
+   background-image: linear-gradient(
+      to top,
+      rgb(0, 0, 0, 0.8),
+      rgb(0, 0, 0, 1)
+   );
+   height: 700px;
+}
+.location-item h1 {
+   padding: 50px 0 0 0;
+}
+
+.location-item {
+   color: white;
+   text-align: center;
+}
+.map-location {
+   height: 400px;
+   margin: 50px auto;
+}
+.map-location iframe {
+   width: 80%;
+   position: relative;
+   border-radius: 5px;
+}
+
+/* footer */
+
+.footer {
+   font-family: "poppins", serif;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0 20px;
+}
+
+.footer-product {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 10px;
+}
+.footer-product h3 {
+   text-align: center;
+   grid-area: span 3 / span 3;
+   color: white;
+}
+
+.footer-product a {
+   color: var(---maincolor);
+}
+.footer-sosmed img {
+   cursor: pointer;
+   margin: 0 10px;
+}
+/* media query */
+
+@media screen and (max-width: 480px) {
+   body {
+      font-size: 70%;
+      font-family: "Poppins", serif;
+   }
+
+   .navbar {
+      justify-content: space-between;
+      align-items: center;
+      height: 50px;
+      line-height: 50px;
+   }
+   .navbar-logo {
+      margin: 0 0 0 10px;
+   }
+   .navbar-nav {
+      display: none;
+   }
+   .navbar-search {
+      margin: 0 10px 0 0;
+   }
+   .navbar-search button {
+      font-size: 12px;
+   }
+   .navbar-btn {
+      width: 50px;
+      border-radius: 5px;
+      text-align: start;
+   }
+   .navbar-btn::placeholder {
+      font-size: 9px;
+      line-height: 50px;
+   }
+
+   .container {
+      text-align: center;
+   }
+   .container-left {
+      display: inline-block;
+      align-items: center;
+      margin: auto;
+   }
+
+   .container-button {
+      text-align: center;
+      margin: 0 30px;
+   }
+
+   .list-car {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 10px;
+      margin: 0 30px;
+      row-gap: 0px;
+   }
+
+   .list-car-item {
+      margin: 10px 0;
+      padding: 5px 5px;
+      height: 200px;
+      width: 120px;
+      position: relative;
+      box-shadow: none;
+      transition: 0.5s;
+   }
+   .list-car-item:hover {
+      transform: scale(1.3);
+   }
+   .list-car-item img {
+      height: 150px;
+      width: 100%;
+      margin: 5px 0 0 0;
+      border: none;
+      box-shadow: 0 0 4px rgba(255, 255, 255, 0.8);
+      cursor: pointer;
+      /* transition: 0.5s; */
+   }
+   /* .list-car-item img:hover {
+      transform: scale(1.3);
+   } */
+   .list-car-item p {
+      position: absolute;
+      top: 110px;
+      width: 120px;
+      color: rgba(255, 255, 255, 0.4);
+      cursor: pointer;
+      font-size: 8px;
+      /* transition: 0.5s; */
+   }
+   /* .list-car-item p:hover {
+      transform: scale(1.3);
+   } */
+
+   .list-car-item h3,
+   h6 {
+      display: inline-block;
+   }
+
+   .list-car-item .btn {
+      display: none;
+   }
+
+   .footer {
+      display: block;
+   }
+
+   .footer-sosmed {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+   }
+   .footer-sosmed img {
+      width: 20px;
+      height: 20px;
+   }
+
+   .footer-product {
+      margin: 0;
+   }
+   .footer-logo{
+      margin: 0;
+   }
+}
